@@ -67,6 +67,7 @@ int main() {
 	UniquePointer<Demo> ptr(demo);
 	UniquePointer<Demo> ptrs(new Demo());
 	ptr = move(ptr);
+	ptr = move(ptrs);
 
 	return 0;
 }
